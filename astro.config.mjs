@@ -1,5 +1,10 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'; // Importa defineConfig
 
-// https://astro.build/config
-export default defineConfig({});
+import tailwind from '@astrojs/tailwind';
+
+export default defineConfig({
+  // Configuración de Astro
+  site: 'https://tusitio.com',
+  integrations: [tailwind()],
+  // Otras configuraciones
+});
